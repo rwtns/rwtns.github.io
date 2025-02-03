@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Halaman informasi perbaikan situs dengan desain Material You.">
+    <title>Perbaikan Situs - Material You</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Variabel Warna Material You */
+        :root {
+            --primary-color: #6750A4;
+            --surface-color: #FFFBFE;
+            --on-surface-color: #1C1B1F;
+            --on-primary-color: #FFFFFF;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling Dasar */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--surface-color);
+            color: var(--on-surface-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--surface-color);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .status {
+            padding: 15px;
+            background-color: #E8DEF8;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .status h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .status p {
+            margin-bottom: 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: var(--on-primary-color);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #5A4A8F;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: var(--on-primary-color);
+            border-radius: 12px;
+        }
+
+        footer p {
+            margin-bottom: 0;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="status">
+            <h3>Status Perbaikan</h3>
+            <p>
+                Perbaikan diperkirakan selesai dalam <strong>waktu yang tidak ditentukan</strong>. Terima kasih atas kesabaran dan dukungan Anda.
+            </p>
+        </div>
+        <h3>Hubungi:</h3>
+            <a href="https://t.me/RisaWitama" class="cta-button">RisaWitama @ Telegram</a>
+            <br/>
+            <br/>
+            <a href="https://instagram.com/ardiirsw_" class="cta-button">ardiirsw_ @ Instagram</a>
+            <br/>
+            <br/>
+            <a href="mailto:risawitama@gmail.com" class="cta-button">risawitama @ Gmail</a>
+    </div>
+
+</body>
+</html>
