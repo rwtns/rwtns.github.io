@@ -3,137 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Halaman informasi perbaikan situs dengan desain Material You.">
-    <title>Perbaikan Situs - Material You</title>
+    <title>PERBAIKAN</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <style>
-        /* Reset CSS */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Variabel Warna Material You */
-        :root {
-            --primary-color: #6750A4;
-            --surface-color: #FFFBFE;
-            --on-surface-color: #1C1B1F;
-            --on-primary-color: #FFFFFF;
-            --shadow-color: rgba(0, 0, 0, 0.1);
-        }
-
-        /* Styling Dasar */
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: var(--surface-color);
-            color: var(--on-surface-color);
-            line-height: 1.6;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: var(--surface-color);
-            border-radius: 12px;
-            box-shadow: 0 4px 6px var(--shadow-color);
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            font-size: 2rem;
-            color: var(--primary-color);
-            margin-bottom: 15px;
-        }
-
-        p {
-            font-size: 1rem;
-            margin-bottom: 20px;
-        }
-
-        .status {
-            padding: 15px;
-            background-color: #E8DEF8;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-
-        .status h3 {
-            font-size: 1.5rem;
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-
-        .status p {
-            margin-bottom: 0;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: var(--primary-color);
-            color: var(--on-primary-color);
-            text-decoration: none;
-            border-radius: 8px;
-            transition: background-color 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background-color: #5A4A8F;
-        }
-
-        footer {
+            background-color: #f5f5f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
             text-align: center;
-            margin-top: 40px;
-            padding: 20px;
-            background-color: var(--primary-color);
-            color: var(--on-primary-color);
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 24px;
             border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
-
-        footer p {
-            margin-bottom: 0;
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 16px;
         }
-
-        /* Responsiveness */
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            h2 {
-                font-size: 1.5rem;
-            }
-
-            .container {
-                padding: 15px;
-            }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 24px;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        .icon {
+            font-size: 48px;
+            color: #6200ea; /* Warna utama Material You */
+        }
+        /* CSS untuk Safety Line */
+        .safety-line {
+            width: 100%;
+            height: 25px; /* Tinggi garis */
+            background-image: repeating-linear-gradient(
+                -45deg, 
+                #FFD700, /* Kuning */ 
+                #FFD700 20px, 
+                #000000 20px, /* Hitam */ 
+                #000000 40px
+            ); /* Pola diagonal kuning-hitam */
+            margin-bottom: 20px; /* Jarak antara garis dan konten lainnya */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="status">
-            <h3>Status Perbaikan</h3>
-            <p>
-                Perbaikan diperkirakan selesai dalam <strong>waktu yang tidak ditentukan</strong>. Terima kasih atas kesabaran dan dukungan Anda.
-            </p>
+        <div class="safety-line"></div> <!-- Garis safety line -->
+        <h1>Sedang Dalam Perbaikan</h1>
+        <p>Mohon maaf atas ketidaknyamanannya. Terima kasih telah berkunjung.</p>
+        <p>Jika ada pertanyaan/kritik/saran<br/><a href="https://t.me/RisaWitama">HUBUNGI</a>
+        <div class="footer">
         </div>
-        <h3>Hubungi:</h3>
-            <a href="https://t.me/RisaWitama" class="cta-button">RisaWitama @ Telegram</a>
-            <br/>
-            <br/>
-            <a href="https://instagram.com/ardiirsw_" class="cta-button">ardiirsw_ @ Instagram</a>
-            <br/>
-            <br/>
-            <a href="mailto:risawitama@gmail.com" class="cta-button">risawitama @ Gmail</a>
     </div>
-
 </body>
 </html>
